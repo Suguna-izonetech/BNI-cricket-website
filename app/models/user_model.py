@@ -14,11 +14,11 @@ from sqlalchemy.orm import Mapped, mapped_column
 # Import the shared async Base
 from app.db.async_session import AsyncBase
 
+from app.db.base import Base
+from sqlalchemy import Column, Integer, String
 
-class User(AsyncBase):
-    """Represents a registered user submitted via the form API."""
+class User(Base):
     __tablename__ = "users"
-
     id: Mapped[uuid.UUID] = mapped_column(
         UUID(as_uuid=True), primary_key=True, default=uuid.uuid4
     )
