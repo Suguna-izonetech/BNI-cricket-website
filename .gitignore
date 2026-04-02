@@ -1,0 +1,47 @@
+# 🔹 Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 🔹 Dependencies
+node_modules/
+
+# 🔹 Build output
+dist/
+dist-ssr/
+build/
+
+# 🔹 Environment files
+.env
+*.local
+
+# 🔹 Editor / IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 🔹 Downloaded / unwanted files (IMPORTANT for your issue)
+*.download
+
+# 🔹 Your specific unwanted folder
+cricket-score/src/assets/Cricket Live Hub_files/
+
+# 🔹 Optional (common junk files)
+*.tmp
+*.cache
+*.bak
+
+# 🔹 Optional (minified files if not needed)
+*.min.js
+*.min.css
